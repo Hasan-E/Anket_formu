@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ********************** HEADERS **************************** -->
+      <header>
+        <h1>NET<span>FLIX</span></h1>
+        <h3>
+          Thank you for signing up at Netflix. Tell us more about yourself.
+        </h3>
+      </header>
+      <!-- *********************** MAIN ******************************* -->
+      <!-- *************Sayfanın ana içeriği form olduğı için main kullandım***************** -->
+      <main>
+        <!-- ********************* FORM ******************************* -->
+
+        <form action="./result.html">
+          <!-- ******** Isim yas ve email girişleri ******* -->
+          <section class="inputbox">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="isim"
+              placeholder="enter your name"
+            />
+          </section>
+          <section class="inputbox">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="yas"
+              placeholder="age"
+              min="0"
+              max="99"
+            />
+          </section>
+          <section class="inputbox">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="enter your email"
+            />
+          </section>
+
+          <!-- ******** Content Type Seçim Alanı******** -->
+
+          <section class="content">
+            <label for="content">Content Type</label>
+            <div class="select">
+              <select name="icerik_secimi" id="content">
+                <option value="series">Series</option>
+                <option value="movies">movies</option>
+                <option value="tvshows">tvshows</option>
+              </select>
+            </div>
+          </section>
+
+          <!-- ******* movie type check box ************* -->
+
+          <section class="movie">
+            <label for="movie">Movie Type</label>
+            <div class="comedy">
+              <input type="checkbox" id="comedy" name="film_turu" />
+              <label for="comedy">Comedy</label>
+            </div>
+            <div class="action">
+              <input type="checkbox" id="action" name="film_turu" />
+              <label for="action">Action</label>
+            </div>
+            <div class="romance">
+              <input type="checkbox" id="romance" name="film_turu" />
+              <label for="romance">Romance</label>
+            </div>
+          </section>
+
+          <!-- ****** Gender se.im alanı ***************** -->
+
+          <section class="gender">
+            <label>Gender</label>
+            <div class="male">
+              <input type="radio" id="male" name="cinsiyet" value="erkek" />
+              <label for="male">Male</label>
+            </div>
+            <div class="female">
+              <input type="radio" id="female" name="cinsiyet" value="kadin" />
+              <label for="female">Female</label>
+            </div>
+            <div class="other">
+              <input type="radio" id="other" name="cinsiyet" value="diğer" />
+              <label for="other">Other</label>
+            </div>
+          </section>
+
+          <!-- ****** Feedbac section ****************-->
+
+          <section class="feedBack">
+            <label for="feedback">Feed Back</label>
+            <div class="textarea">
+              <textarea
+                name="yorum"
+                id="feedback"
+                placeholder="any comments"
+                rows="4"
+              ></textarea>
+            </div>
+          </section>
+
+          <!-- **** BUTTON ********************* -->
+
+          <section class="button">
+            <input type="submit" value="Send" />
+          </section>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
